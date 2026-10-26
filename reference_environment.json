@@ -1,0 +1,17 @@
+{
+  "python": "3.12.14",
+  "platform": "Linux-5.15.0-25-generic-aarch64-with-glibc2.35",
+  "encoder_device": "cpu",
+  "encoder_cpu_threads": 16,
+  "head_device": "cpu",
+  "head_cpu_threads": 4,
+  "installed_builds": {
+    "torch": "2.14.1+cpu",
+    "torchvision": "0.29.1+cpu",
+    "opencv-python": "5.0.0.93",
+    "opencv-python-headless": "5.0.0.93",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "transformers": "5.20.2"
+  }
+}
