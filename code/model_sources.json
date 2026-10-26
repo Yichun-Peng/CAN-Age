@@ -1,0 +1,37 @@
+{
+  "grounding_dino": {
+    "repository": "IDEA-Research/grounding-dino-tiny",
+    "revision": "a2bb814dd30d776dcf7e30523b00659f4f141c71"
+  },
+  "official_model_source_processing_directory": "code/image_processing",
+  "automatic_cpu_processing_directory": "code/image_processing_cpu",
+  "selected_processing_directory": "code/image_processing_cpu_semantic_v1",
+  "files": {
+    "yolo11n-seg.pt": {
+      "bytes": 6182636,
+      "sha256": "55ed65c56c91713d23e8402371c6c49a6fd84f257f7dce452e8d70e41dcbe152",
+      "source_path": "code/image_processing/models/yolo11n-seg.pt"
+    },
+    "mobile_sam.pt": {
+      "bytes": 40728226,
+      "sha256": "6dbb90523a35330fedd7f1d3dfc66f995213d81b29a5ca8108dbcdd4e37d6c2f",
+      "source_path": "code/image_processing/models/mobile_sam.pt"
+    },
+    "mobilenet_v3_small-047dcff4.pth": {
+      "bytes": 10306551,
+      "sha256": "047dcff4addef86ea5bc2eff13c9614dc11f47ab1160d0a71a25e7db994f4e1f"
+    },
+    "vgg11-8a719046.pth": {
+      "bytes": 531460341,
+      "sha256": "8a7190461cb581dbcbd2c3b58f43cf12a0bca3ccf92898f867e4a9e9b898c464"
+    },
+    "resnet18-f37072fd.pth": {
+      "bytes": 46830571,
+      "sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec"
+    },
+    "densenet121-a639ec97.pth": {
+      "bytes": 32342954,
+      "sha256": "a639ec97d7c33b07ae66f0b5fb7d0192f95a3b11b7576c66c0126c2a727c4395"
+    }
+  }
+}
