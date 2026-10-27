@@ -23,12 +23,12 @@ python scripts/validate_release.py
 python scripts/plot_saved_results.py
 ```
 
-The downloader fetches `CAN_Age_data_code_20261027.zip` from release **v2026.10.27**, verifies its fixed SHA-256, and restores the complete directory tree. Original photographs, native masks, measurements, OOF probabilities, and checkpoints are in the release asset. The validator checks every original/decoded image hash, label/fold membership, date/source isolation, all 60 primary fold logs, and metrics recomputed from saved probabilities. It writes `outputs/release_validation.json`.
+The downloader restores the complete data release `CAN_Age_data_code_20261027.zip` from **v2026.10.27**, then applies the figure-layout patch `CAN_Age_figure_alignment_20261027.zip` from **v2026.10.27.1**. Both archives have fixed SHA-256 checksums. The patch contains the aligned figures, manuscript PDF/source, portable renderer and final full-tree manifest. The experimental data, saved results and manuscript text are unchanged. Original photographs, native masks, measurements, OOF probabilities, and checkpoints are in the release asset. The validator checks every original/decoded image hash, label/fold membership, date/source isolation, all 60 primary fold logs, and metrics recomputed from saved probabilities. It writes `outputs/release_validation.json`.
 
-An already downloaded archive works offline:
+The two downloaded archives work offline:
 
 ```bash
-python scripts/download_assets.py --archive CAN_Age_data_code_20261027.zip
+python scripts/download_assets.py --archive CAN_Age_data_code_20261027.zip --patch-archive CAN_Age_figure_alignment_20261027.zip
 ```
 
 ## Reproduce
@@ -80,4 +80,10 @@ MIT. See [LICENSE](LICENSE).
 
 ```text
 50daf95fda9423384f15e95dd625256721f08549ba1e7a52b58aa3769adab8ce
+```
+
+`CAN_Age_figure_alignment_20261027.zip` (v2026.10.27.1):
+
+```text
+3295af3e18e2b6cf076657447dfe0387770a2fc9ec9c269f994c42e90929a368
 ```
